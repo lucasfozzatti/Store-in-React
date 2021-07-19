@@ -1,0 +1,27 @@
+.container{
+    background: linear-gradient(to bottom, rgb(88, 65, 65) 0%, rgb(7, 11, 31) 100%);
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    
+}
+
+
+.tittle{
+    font-size: 50px;
+    text-align: center;
+    align-content: center;
+    width: 300px;
+    
+}
+.back-tittle{
+    display: flex;
+    justify-content: center;
+    color: rgb(124, 124, 124)
+    
+}
+.subcontainer{
+    display: flex;
+    justify-content: center;
+}
+

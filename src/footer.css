@@ -1,0 +1,16 @@
+.container-footer{
+    background: grey;
+    padding: 10px;
+    margin: 0 auto;
+    height: 100px;
+}
+.footer1{
+    margin-left:200px;
+    position: absolute;
+    text-align: left;
+}
+.footer2{
+    position: relative;
+    text-align: right;
+    margin-right:200px;
+}

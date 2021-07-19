@@ -1,0 +1,64 @@
+.main-nav{
+    display: flex;
+    justify-content: center;
+    
+}
+.Navs{
+    display: flex;
+    justify-content: space-between;
+}
+.nav{
+    list-style: none;
+}
+
+ul, ol {
+    list-style:none;
+    
+}
+
+.nav > li {
+    
+    float:left;
+    align-content: center;
+        
+}
+.nav li a {
+    border-top:rgb(0, 0, 0) 6px solid;
+    background-color: rgb(88, 65, 65);
+    color:rgb(255, 255, 255);
+    font-size: 22px;
+    text-align: center;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+    width: 190px;
+    -webkit-box-shadow: 4px 4px 6px #999;
+    transition: background-color .3s;
+    
+     
+}
+
+.nav li a:hover {
+    color: black;
+    background-color: burlywood ;
+    
+ 
+}
+.nav li ul {
+    
+    display:none;
+    position:absolute;
+    min-width:140px;
+   
+}
+.nav li:hover > ul {
+    display:block;
+    
+}
+.nav li ul li {
+    position:relative;
+}
+.nav li ul li ul {
+    right:-190px;
+    top:0px;
+}

@@ -1,0 +1,43 @@
+.item{
+    
+    display: inline-block;
+    margin: 80px;
+    width: 230px;
+    margin-top:90px;
+
+}
+.item:hover {
+    transition: .5s;
+    cursor: pointer;
+    transform:scale(1.2);
+}
+
+
+.item .image img{
+    
+    height: 270px;
+    width: 240px;
+}
+
+.item .title{
+    font-weight: bold;
+    font-size: 15px;
+    height: 30px;
+    text-align: center;
+}
+.item .text{
+    font-weight: bold;
+    font-size: 10px;
+    height: 10px;
+    text-align: center;   
+}
+.price{
+    margin-top: 10px;
+    text-align: center;
+}
+.item .link{
+    position: relative;
+    text-align: center;
+    margin:20px;
+;
+}
