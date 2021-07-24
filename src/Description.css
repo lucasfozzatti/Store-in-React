@@ -17,7 +17,7 @@
 }
  
   
-  @keyframes slidein {
+  /* @keyframes slidein {
     from {
       margin-left: 100%;
       width: 100%
@@ -33,7 +33,7 @@
         width: 150%;
       }
 
-  }
+  } */
 
 .amazon-container a img{
     

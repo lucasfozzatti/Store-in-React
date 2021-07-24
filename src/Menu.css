@@ -3,10 +3,8 @@
     padding: 10px;
     margin: 0 auto;
     margin-bottom: 30px;
-    
-}
 
-
+}    
 .tittle{
     font-size: 50px;
     text-align: center;
@@ -24,4 +22,5 @@
     display: flex;
     justify-content: center;
 }
+
 

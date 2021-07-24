@@ -15,7 +15,14 @@ import Secondary from './Secondary';
 
 
 class App extends React.Component{
+  constructor(props){
+    super(props);
 
+    this.state = {
+        title: '',
+    }
+
+}
   
   
 
@@ -25,10 +32,15 @@ class App extends React.Component{
       <div>
         <Router >
            <Switch>
-            <Route path="/products"render={()=> {return <Secondary/>}}/>
-            <Route path="/nav"render={()=> {return  <Principal />}} />
+
+            <Route path="/" exact component={Principal}/> 
+            <Route path="/:subpage" exact render={({ match }) => {return <Secondary  params={match.params.subpage}/>}}/>
+            <Route path="/nav" exact component={Menu} />
             </Switch>
         </Router>
+
+
+        
 
         {/* <Menu title="Minimalist"/>
         <Nav title="Vintage" />

@@ -5,6 +5,7 @@ import './List.css';
 function List(props){
     return(
         <div className="principal-list">
+            
         <div className="list-item">
             {props.items.map(item =>
            
@@ -14,9 +15,13 @@ function List(props){
                     text={item.text} 
                     price={item.price} 
                     link={item.link}
-                   
-                     />
-            )}
+                    name={item.name}
+                    
+                    />
+                     
+               
+            
+        )}
         </div>
         </div>
     );

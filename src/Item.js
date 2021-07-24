@@ -12,6 +12,7 @@ class Item extends React.Component{
             text: '',
             price:'',   
             link:'', 
+            name:'',
            
         }
   
@@ -24,6 +25,7 @@ class Item extends React.Component{
             text: this.props.text,
             price: this.props.price,
             link: this.props.link,
+            name: this.props.name,
             
         });
     }
@@ -33,13 +35,14 @@ class Item extends React.Component{
             
             <div className="item" >
                
-                    <a href= {this.props.link} >
+                    <a href= {this.props.name} >
                     <div className="image"><img src={'img/' + this.state.image} width="100%" /></div>
+                    </a>
                     <div className="title">{this.state.title}</div>
                     <div className="text">{this.state.text}</div>
                     <div className="price">{this.state.price}</div>
-                    <div className="link"><a  href="https://www.facebook.com" target="_blank" rel="noopener" style={{color:'orange'}} > comprar producto </a></div> 
-                    </a>
+                    
+                   
             </div>
             
         );

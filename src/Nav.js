@@ -14,36 +14,29 @@ class Nav extends React.Component{
     render(){
         return(
             <div className="main-nav">
- 
-                <ul class="nav">
-				<li className = "principal-li"><a href="">Inicio</a></li>
-				<li className="principal-li"><a href="">Servicios</a>
-					<ul>
-						<li><a href="">Submenu1</a></li>
-						<li><a href="">Submenu2</a></li>
-						<li><a href="">Submenu3</a></li>
-						<li><a href="">Submenu4</a>
-							<ul>
-								<li><a href="">Submenu1</a></li>
-								<li><a href="">Submenu2</a></li>
-								<li><a href="">Submenu3</a></li>
-								<li><a href="">Submenu4</a></li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li className="principal-li"><a href="">Acerca De</a>
-					<ul>
-						<li><a href="">Submenu1</a></li>
-						<li><a href="">Submenu2</a></li>
-						<li><a href="">Submenu3</a></li>
-						<li><a href="">Submenu4</a></li>
-					</ul>
-				</li>
-				<li className="principal-li"><a href="">Contacto</a></li>
-			</ul>
-               
-            </div>
+				<input type="checkbox" id="btn-nav" class="checkbox"/>
+				<header>
+					<div class="header-container">
+						<label for="btn-nav" class="btn-label">
+						<div class="header-button"></div>
+						</label>
+					</div>
+				</header>
+				
+				<nav class="menu">
+				<ul>
+					<li>Home</li>
+					<li>About</li>
+					<li>Contacto</li>
+				</ul>      
+				<ul>
+					<a href="" class="icon-facebook"/>
+					<a href="" class="icon-twitter"/>
+					<a href="" class="icon-youtube"/>
+					<a href="" class="icon-instagram"/>
+				</ul>      
+				</nav>
+			</div>
         );
     }
 }   
