@@ -1,16 +1,14 @@
 .principal-list{
-    display: flex;
-    justify-content: center;
-    
+    margin:0px auto;
 }
 
-
 .list-item{
-
-    display: inline-block;
-    max-width: 1200px;
-    flex-direction: row-reverse;
-
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin:40px;
 }
 
    

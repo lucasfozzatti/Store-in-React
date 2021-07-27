@@ -11,11 +11,10 @@ class Footer extends React.Component{
     render(){
         return(
             <div className="container-footer">
-                <div className="subcontainer">
-                <h1 className="footer1">{this.props.title}</h1>
-                <h1 className="footer2">{this.props.title}</h1>
+                <footer className="subcontainer">
+                <p class="text">© 2021 All rights reserved.</p>
         
-                </div>
+                </footer>
             </div>
         );
     }

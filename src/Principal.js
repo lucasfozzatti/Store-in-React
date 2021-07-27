@@ -52,7 +52,7 @@ class Principal extends React.Component{
   render(){
     return (
 
-      <div>
+      <div className="principal">
         
 
         <Menu title="Minimalist"/>

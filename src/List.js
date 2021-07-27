@@ -1,6 +1,7 @@
 import React from 'react';
 import Item from './Item';
 import './List.css';
+import Footer from './footer';
 
 function List(props){
     return(
@@ -23,6 +24,7 @@ function List(props){
             
         )}
         </div>
+        
         </div>
     );
 }

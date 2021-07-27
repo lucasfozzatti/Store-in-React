@@ -54,7 +54,7 @@ class Secondary extends React.Component{
     this.setState({copyBooks: this.state.[match] });
     
   }
-   
+  
   componentDidMount(){
       this.actualizarCampo()
     
@@ -63,9 +63,8 @@ class Secondary extends React.Component{
   render(){
     return (
 
-      <div>
+      <div className= "secondary">
        
-
         <Menu/>
         <Nav title="Vintage" />
         <List className="list" items={this.state.copyBooks} />

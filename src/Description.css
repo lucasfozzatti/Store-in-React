@@ -2,39 +2,20 @@
     
     display: flex;
    justify-content: center;
+   margin-left:10%;
+   margin-right:10%;
 
 }
 .subcontainer-description{
-    padding: 35px 120px 30px;
-    
+   
     text-align: center;
 }
 .text-description{
     margin-top:40px;
-    animation-duration: 1s;
-    animation-name: slidein;
-    animation-direction: alternate;
+    
 }
  
   
-  /* @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 100%
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-    75% {
-        font-size: 150%;
-        margin-left: 25%;
-        width: 150%;
-      }
-
-  } */
-
 .amazon-container a img{
     
     width: 250px;

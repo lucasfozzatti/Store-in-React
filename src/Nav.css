@@ -1,15 +1,4 @@
 
-* {
-    margin: 0;
-    padding: 0;
-  }
-  html {
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-  }
-  body {
-    background: white;
-  }
   .checkbox {
     display: none;
   }
@@ -55,7 +44,7 @@
   .menu {
     background: #d1d1d1;
     width: 100%;
-    height: 10rem;
+    height: 8rem;
     position: fixed;
     z-index: 9;
     top: -12rem;
