@@ -1,14 +1,10 @@
 import React from 'react';
-import {render} from "react-dom"
-import './App.css';
 import Menu from './Menu';
 import List from './List';
-import Nav from './Nav';
+import Nav2 from './Nav2';
 import Footer from './footer';
 import Description from './Description';
-import Products from './Products';
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-
+import Nav from './Nav';
 
 
 
@@ -28,8 +24,8 @@ class Principal extends React.Component{
             {id:7, rating: 5,text:'El trabajo es algo que con el tiempo se torna muy repetitivo. Permítete cosas “nuevas”. Dale otro aspecto a tu entorno laboral.' , title: 'Oficina', image: 'minimalist.jpg', link: "https://amzn.to/3vNIe6R"},
             {id:8, rating: 5,text:'Ya lo nuevo quedo atrás. Remodela tu hogar con el mejor estilo Dale tu toque de elegancia' , title: 'Muebles', image: 'minimalist.jpg', link: "https://amzn.to/3vNIe6R"}
           ],
-          copyBooks: []
-    
+          copyBooks: [],
+          width: 0,
         };
         // this.updateRating = this.updateRating.bind(this);
       }
@@ -37,29 +33,34 @@ class Principal extends React.Component{
       initBooks(){
     
         this.setState((state,props) => ({
-          copyBooks: [...state.books]
-    
+          copyBooks: [...state.books],
+          width: window.innerWidth
         }));
     
       }
       componentDidMount(){
         this.initBooks();
+        window.addEventListener('resize', this.updateWindowDimensions);
+        
+      }
+      componentWillUnmount() {
+        window.removeEventListener('resize', this.updateWindowDimensions);
       }
       
-    
-  
+      
+      
 
   render(){
+    console.log("hola",this.state.width)
     return (
 
       <div className="principal">
         
-
         <Menu title="Minimalist"/>
-        <Nav/>
+        {(this.state.width > 600)? <Nav2/> : <Nav/> }
         <Description />
         <List className="list" items={this.state.copyBooks}/>
-        <Footer title="Minimalist" />
+        <Footer title="Minimalist"/>
 
         </div>
     )

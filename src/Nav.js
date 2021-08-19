@@ -15,7 +15,7 @@ class Nav extends React.Component{
         return(
             <div className="main-nav">
 				<input type="checkbox" id="btn-nav" class="checkbox"/>
-				<header>
+				<header className="header">
 					<div class="header-container">
 						<label for="btn-nav" class="btn-label">
 						<div class="header-button"></div>
@@ -24,16 +24,16 @@ class Nav extends React.Component{
 				</header>
 				
 				<nav class="menu">
-				<ul>
-					<li>Home</li>
-					<li>About</li>
-					<li>Contacto</li>
+				<ul className="ul-principal">
+					<li className="li-principal">Home</li>
+					<li className="li-principal">About</li>
+					<li className="li-principal">Contacto</li>
 				</ul>      
 				<ul>
-					<a href="" class="icon-facebook"/>
-					<a href="" class="icon-twitter"/>
-					<a href="" class="icon-youtube"/>
-					<a href="" class="icon-instagram"/>
+					<a className = "ul-a"href="" class="icon-facebook"/>
+					<a className = "ul-a"href="" class="icon-twitter"/>
+					<a className = "ul-a"href="" class="icon-youtube"/>
+					<a className = "ul-a"href="" class="icon-instagram"/>
 				</ul>      
 				</nav>
 			</div>

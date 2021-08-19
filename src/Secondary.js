@@ -1,14 +1,11 @@
 import React from 'react';
-import {render} from "react-dom"
 import './App.css';
 import Menu from './Menu';
 import List from './List';
 import Nav from './Nav';
 import Footer from './footer';
-import Description from './Description';
-import Products from './Products';
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import { castDraft } from 'immer';
+import Nav2 from './Nav2';
+
 
 
 
@@ -28,7 +25,13 @@ class Secondary extends React.Component{
         {id:4, rating: 5, price:'$467,10',text:'black or white minimalist vase' , title: 'product5', image: 'minimalist.jpg', link: "https://amzn.to/3vNIe6R"},
         {id:6, rating: 5, price:'$11,00', text:'black or white minimalist vase' , title: 'product6', image: 'minimalist.jpg', link: "https://amzn.to/3vNIe6R"},
         {id:7, rating: 5, price:'$1600,00', text:'black or white minimalist vase' , title: 'product7', image: 'minimalist.jpg', link: "https://amzn.to/3vNIe6R"},
-        {id:8, rating: 5, price:'$325,00', text:'black or white minimalist vase' , title: 'product8', image: 'minimalist.jpg', link: "https://amzn.to/3vNIe6R"}
+        {id:8, rating: 5, price:'$325,00', text:'black or white minimalist vase' , title: 'product8', image: 'minimalist.jpg', link: "https://amzn.to/3vNIe6R"},
+        {id:9, rating: 4, price:'', text:'black or white minimalist vase' ,title: 'product9', image: 'cyberpunk.jpg', link: "http://localhost:3000/nav"},
+        {id:10, rating: 3, price:'$260,2',text:'black or white minimalist vase' , title: 'product2', image: 'tocadisco.jpg', link: "https://amzn.to/3vNIe6R"},
+        {id:11, rating: 5, price:'$15,00',text:'black or white minimalist vase' , title: 'product3', image: 'minimalist.jpg', link: "https://amzn.to/3vNIe6R"},
+        {id:12, rating: 5, price:'$2745,00',text:'black or white minimalist vase' , title: 'product4', image: 'minimalist.jpg', link: "https://amzn.to/3vNIe6R"},
+        {id:13, rating: 5, price:'$467,10',text:'black or white minimalist vase' , title: 'product5', image: 'minimalist.jpg', link: "https://amzn.to/3vNIe6R"},
+        {id:14, rating: 5, price:'$11,00', text:'black or white minimalist vase' , title: 'product6', image: 'minimalist.jpg', link: "https://amzn.to/3vNIe6R"},
       ],
       Masculina:[
         {id:0, rating: 4, price:'', text:'black or white minimalist vase' ,title: 'product8', image: 'cyberpunk.jpg', link: "http://localhost:3000/nav"},
@@ -40,8 +43,9 @@ class Secondary extends React.Component{
         {id:7, rating: 5, price:'$1600,00', text:'black or white minimalist vase' , title: 'product7', image: 'minimalist.jpg', link: "https://amzn.to/3vNIe6R"},
         {id:8, rating: 5, price:'$325,00', text:'black or white minimalist vase' , title: 'product8', image: 'minimalist.jpg', link: "https://amzn.to/3vNIe6R"}
       ],
-      copyBooks: []
- 
+      copyBooks: [],
+      
+     
     };
     // this.initBooks = this.initBooks.bind(this);
     // this.updateRating = this.updateRating.bind(this);
@@ -51,22 +55,24 @@ class Secondary extends React.Component{
   actualizarCampo = () => {
   
     const match = this.props.params;
-    this.setState({copyBooks: this.state.[match] });
+    this.setState({copyBooks: this.state[match]});
     
   }
   
   componentDidMount(){
+     
       this.actualizarCampo()
     
   }
-  
+ 
   render(){
+    
     return (
 
       <div className= "secondary">
-       
+        
         <Menu/>
-        <Nav title="Vintage" />
+        
         <List className="list" items={this.state.copyBooks} />
         <Footer title="Minimalist" /> 
 
