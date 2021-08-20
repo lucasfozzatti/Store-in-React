@@ -15,12 +15,12 @@ class Principal extends React.Component{
         
         this.state = {
           books:[
-            {id:0, rating: 4, text:'¿Te gustaría cambiar tu ambiente y fascinar a tus invitados? Con tan solo utilizar este tipo de iluminación cambiara por completo a un estilo más retro' ,title: 'Iluminación', image: 'minimalist.jpg', link: "http://localhost:3000/Secondary", name:"Iluminacion"},
-            {id:1, rating: 3,text:'¿Cansado de la ropa común y poco extravagante? Cambia tu forma de vestir, cambia tu estilo ¡se tú mismo!' , title: 'Moda Masculina', image: 'tocadisco.jpg', link: "https://amzn.to/3vNIe6R", name:'Masculina'},
-            {id:2, rating: 5,text:'Todos sabemos que la moda de antes está volviendo ¡Y no es casualidad! Quien no quisiera vestir con tanto estilo. Navega por cada uno de estos increíbles diseños' , title: 'Moda femenina', image: 'minimalist.jpg', link: "https://amzn.to/3vNIe6R"},
+            {id:0, rating: 4, text:'¿Te gustaría cambiar tu ambiente y fascinar a tus invitados? Con tan solo utilizar este tipo de iluminación cambiara por completo a un estilo más retro' ,title: 'Iluminación', image: 'minimalist.jpg', link: "Iluminacion"},
+            {id:6, rating: 5,text:'¿Te gusta cocinar verdad? Cambia el ambiente de tu cocina con estos geniales productos vintage de excelente calidad' , title: 'Cocina', image: 'minimalist.jpg', link: "Cocina"},
+            {id:1, rating: 3,text:'¿Cansado de la ropa común y poco extravagante? Cambia tu forma de vestir, cambia tu estilo ¡se tú mismo!' , title: 'Moda Masculina', image: 'tocadisco.jpg', link: "Masculina"},
+            {id:2, rating: 5,text:'Todos sabemos que la moda de antes está volviendo ¡Y no es casualidad! Quien no quisiera vestir con tanto estilo. Navega por cada uno de estos increíbles diseños' , title: 'Moda femenina', image: 'minimalist.jpg', link: "Cocina"},
             {id:3, rating: 5,text:'¿Quisieras revivir la mejor época, volver a los confines del sonido y recordar cómo se escuchaban tus bandas favoritas en uno de estos equipos o simplemente darle otro estilo a tu sala?' , title: 'Audio', image: 'minimalist.jpg', link: "https://amzn.to/3vNIe6R"},
             {id:4, rating: 5,text:'Esto no es cosa de gente común. Tu viste esta sección y no es casualidad, tienes estilo y lo sabes bien. Redecora tu casa con estos asombrosos artículos vintage.' , title: 'Decoración', image: 'minimalist.jpg', link: "https://amzn.to/3vNIe6R"},
-            {id:6, rating: 5,text:'¿Te gusta cocinar verdad? Cambia el ambiente de tu cocina con estos geniales productos vintage de excelente calidad' , title: 'Cocina', image: 'minimalist.jpg', link: "https://amzn.to/3vNIe6R"},
             {id:7, rating: 5,text:'El trabajo es algo que con el tiempo se torna muy repetitivo. Permítete cosas “nuevas”. Dale otro aspecto a tu entorno laboral.' , title: 'Oficina', image: 'minimalist.jpg', link: "https://amzn.to/3vNIe6R"},
             {id:8, rating: 5,text:'Ya lo nuevo quedo atrás. Remodela tu hogar con el mejor estilo Dale tu toque de elegancia' , title: 'Muebles', image: 'minimalist.jpg', link: "https://amzn.to/3vNIe6R"}
           ],

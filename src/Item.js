@@ -35,9 +35,10 @@ class Item extends React.Component{
             
             <div className="item" >
                
-                    <a href= {this.props.name} >
+                    <a href= {this.props.link} >
                     <div className="image"><img src={'img/' + this.state.image} width="100%" /></div>
                     </a>
+                    
                     <div className="title">{this.state.title}</div>
                     <div className="text">{this.state.text}</div>
                     <div className="price">{this.state.price}</div>
